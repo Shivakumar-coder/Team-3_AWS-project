@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+main {
+  background-color: rgba(117, 81, 26, 0.3);
+  color: white;
+  width: 90vh;
+  height: 60vh;
+  border-radius: 3%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.contents{
+    height: 400px;
+    width: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#password {
+  /* margin-left: -50px; */
+  margin-top: 2rem;
+  height: 1.5rem; 
+}
+#username{
+    height: 1.5rem;
+    /* margin-left: -62px; */
+    margin-top: 4rem;
+}
+#btn{ 
+    margin-top: 1rem;
+    width: 6rem;
+}
+label{ 
+    /* margin-right: 70px; */
+    margin-left: 0px;
+}
+a{
+    margin-top: 1rem;
+    color: white
+}
