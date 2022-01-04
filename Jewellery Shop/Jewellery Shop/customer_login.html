@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
     <title>Customer Login</title>
 </head>
 <style>
@@ -17,7 +19,6 @@
     background-position: center;
     background-repeat: no-repeat; 
     background-size:cover;   
-  
     
 }
 </style>
@@ -34,11 +35,14 @@
             <label> Password</label>
             <input type="password" name="" id="password">
         </div>
-        <div class="submit">
-            <input type="button" name="" id="btn" value="Sign In" onclick="location.href='customer.html'">
+        <div class="button" onclick="location.href='customer.html'">
+            <h3>Sign In</label>
         </div>
+        <div>
+        <a href="#">New User? Sign Up</a>
         <a href="#">Forget Password ?</a>
-        <a href="#"><b>Sign Up</b></a>
+    </div>
+        
     </div>
     </main>
 </body>

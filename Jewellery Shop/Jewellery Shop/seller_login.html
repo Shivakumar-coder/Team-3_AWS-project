@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/login.css">
-    <title>Seller Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+    <title>Customer Login</title>
 </head>
 <style>
     body{
+    
+        
     background-image: url("pictures/bg2.jpg");
     min-height: 100vh;
     
     background-position: center;
     background-repeat: no-repeat; 
     background-size:cover;   
+    
 }
 </style>
 <body>
@@ -23,18 +28,21 @@
         <div class=" contents">
         <div class="uname">
             <label> User Name</label>
-            <input type="text" name="" id="username" required="true">
+            <input type="text" name="" id="username">
 
         </div>
         <div class="password">
             <label> Password</label>
-            <input type="text" name="" id="password">
+            <input type="password" name="" id="password">
         </div>
-        <div class="submit">
-            <input type="button" name="" id="btn" value="Sign In">
+        <div class="button" onclick="location.href='customer.html'">
+            <h3>Sign In</label>
         </div>
+        <div>
+        <a href="#">New User? Sign Up</a>
         <a href="#">Forget Password ?</a>
-        <a href="#"><b>Sign Up</b></a>
+    </div>
+        
     </div>
     </main>
 </body>

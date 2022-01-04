@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/seller.css" />
+    <title>Seller</title>
+  </head>
+  <style>
+    body {
+      background-image: url("pictures/bg4.jpg");
+      min-height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <div class="htext"><h1>Welcome to Raven</h1></div>
+      <div class="logout">
+        <a href="seller_login.html">Log Out</a>
+      </div>
+    </div>
+    <main class="main">
+      <div class="price">
+        <h2>Set Current Price</h2>
+        <div class="price_content">
+          <div class="gold_price">
+            <label>Gold:</label>
+            <input type="text" id="gprice" class="price_input" />
+          </div>
+          <div class="silver_price">
+            <label>Silver:</label>
+            <input type="text" id="silprice" class="price_input" />
+          </div>
+          <div class="diamond_price">
+            <label>Diamond:</label>
+            <input type="text" id="dimprice" class="price_input" />
+          </div>
+          <div class="platinum_price">
+            <label>Platinum:</label>
+            <input type="text" id="pltprice" class="price_input" />
+          </div>
+          <div class="price_update">
+            <input
+              type="button"
+              value="Set Price"
+              id="setprice"
+              class="set_price"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <h2>Add Items</h2>
+        <div class="item_details">
+          <div class="gold_price">
+            <label>Metal</label>
+            <input type="text" id="gprice" class="price_input" />
+          </div>
+          <div class="silver_price">
+            <label>Type of Jewel:</label>
+            <input type="text" id="silprice" class="price_input" />
+          </div>
+          <div class="diamond_price">
+            <label>Weight:</label>
+            <input type="text" id="dimprice" class="price_input" />
+          </div>
+          <div class="platinum_price">
+            <label>Making charge:</label>
+            <input type="text" id="pltprice" class="price_input" />
+          </div>
+          <div class="price_update">
+            <input
+              type="button"
+              value="Add Jewel"
+              id="add_item"
+              class="add_btn"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="remove_items">
+        <h2>Remove Items</h2>
+        <div class="item_details">
+          <div class="rm_item">
+            <label>Select Item Id:</label>
+            <input type="text" id="pltprice" class="price_input" />
+          </div>
+          <div class="gold_price">
+            <label>Metal:</label>
+            <input type="text" id="gprice" class="price_input" />
+          </div>
+          <div class="silver_price">
+            <label>Type of Jewel:</label>
+            <input type="text" id="silprice" class="price_input" />
+          </div>
+          <div class="diamond_price">
+            <label>Weight:</label>
+            <input type="text" id="rm_weight" class="price_input" />
+          </div>
+          <div class="price_update">
+            <input
+              type="button"
+              value="Remove Jewel"
+              id="rm_item"
+              class="rm_btn"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
