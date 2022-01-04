@@ -7,25 +7,81 @@ main {
 
 .header {
   display: flex;
-  background-color: black;
   color: white;
 }
-.htext{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: blue;
-    justify-content: center;
+.htext {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logout {
+  margin-top: 8px;
   width: 20%;
-  background-color: red;
-  text-decoration: none;
+  height: 3rem;
+  background-color: rgb(253, 147, 8);
+  display: flex;
   align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+.logout a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 800;
 }
 
-.topnav {
-  background-color: #333;
+.logout:hover {
+  background-color: rgb(216, 218, 247);
+  color: black;
+}
+
+/* on hover block appearance hidden*/
+/* .main_menu nav > ul > li {
+  display: inline-block;
+  position: relative;
+}
+
+.main_menu nav > ul > li > a i {
+  margin-left: 2px;
+}
+.main_menu nav > ul > li:hover > a {
+  color: #a8741a;
+}
+
+.main_menu nav > ul > li.active > a {
+  color: #a8741a;
+}
+
+.main_menu nav > ul > li:first-child a {
+  padding-left: 0;
+}
+
+.main_menu nav > ul > li:last-child a {
+  padding-right: 0;
+}
+
+.main_menu nav > ul > li ul.sub_menu {
+  position: absolute;
+  min-width: 200px;
+  padding: 30px 25px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0 0 0;
+  left: 0;
+  right: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 9;
+  top: 100%;
+  text-align: left;
+} */
+
+
+.topnav{
+  background-color: rgba(51, 51, 51, 0.562);
   min-width: 100%;
   overflow: hidden;
   display: flex;
