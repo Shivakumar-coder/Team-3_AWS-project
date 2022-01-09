@@ -1,1 +1,37 @@
-hi
+pipeline {
+    agent any
+    tools {
+         maven 'maven3'
+    }
+    stages{
+        stage('Build'){
+            steps{
+                 cleanWs()
+                 checkout scm
+                echo "Building ${env.mainproj}..."
+            }
+        }
+         stage('Upload War To Nexus'){
+            steps{
+                nexusArtifactUploader artifacts:[
+                   [
+                        artifactId: 'devopsproj',
+                       classifier: '',
+                       file: 'Demo_OneToOne/target/Demo_OneToOne-0.0.1-SNAPSHOT.jar',
+                      type: 'jar'
+                 ]
+             ],
+                   credentialsId: 'ebe435dd-d8c6-4fb3-9633-1da112a42a69',
+                   groupId: 'team3',
+                   nexusUrl: '3.16.128.144:8081',
+                   nexusVersion: 'nexus3',
+                   protocol: 'http',
+                   repository: 'maven-snapshots',
+                   version: '0.0.1-SNAPSHOT'
+  
+            }
+        }
+        
+    }
+}
+  
